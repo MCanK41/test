@@ -1,11 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://bn6co8r28f26g"]
+[gd_scene load_steps=5 format=3 uid="uid://bn6co8r28f26g"]
 
 [ext_resource type="Texture2D" uid="uid://cq7f743v7fcfh" path="res://icon.svg" id="1_sl6lq"]
+[ext_resource type="PackedScene" uid="uid://bcsfwrmrv7s7l" path="res://karakter.tscn" id="2_bnshc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvfl4"]
+texture = ExtResource("1_sl6lq")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_7ifus"]
+tile_size = Vector2i(128, 16)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_pvfl4")
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1145.0
-offset_bottom = 642.0
-texture = ExtResource("1_sl6lq")
-stretch_mode = 1
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_bnshc")]
+position = Vector2(470, 160)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_7ifus")
+format = 2
