@@ -3,17 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://cq7f743v7fcfh" path="res://icon.svg" id="1_sl6lq"]
 [ext_resource type="PackedScene" uid="uid://bcsfwrmrv7s7l" path="res://karakter.tscn" id="2_bnshc"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvfl4"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wcdos"]
 texture = ExtResource("1_sl6lq")
 texture_region_size = Vector2i(128, 128)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSet" id="TileSet_7ifus"]
-tile_size = Vector2i(128, 16)
+tile_size = Vector2i(128, 128)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_pvfl4")
+sources/1 = SubResource("TileSetAtlasSource_wcdos")
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,4 +19,5 @@ position = Vector2(470, 160)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_7ifus")
+cell_quadrant_size = 128
 format = 2
