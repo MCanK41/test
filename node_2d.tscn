@@ -13,6 +13,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_wcdos")
 
 [node name="Node2D" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [116.0]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_bnshc")]
 position = Vector2(470, 160)

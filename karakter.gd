@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 @export var speed = 200
 @export var friction = 0.1
 @export var acceleration = 0.7
@@ -23,3 +24,4 @@ func _physics_process(delta):
 	else:
 		velocity = velocity.lerp(Vector2.ZERO, friction)
 	move_and_slide()
+

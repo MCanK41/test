@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpjpi3syu0luf"]
+
+[ext_resource type="Texture2D" uid="uid://ders1jubvx2h0" path="res://pixil-frame-0_9.png" id="1_87ina"]
+[ext_resource type="Script" path="res://arm.gd" id="2_febnq"]
+
+[node name="arm" type="Sprite2D"]
+position = Vector2(46, 23)
+scale = Vector2(3, 3)
+texture = ExtResource("1_87ina")
+offset = Vector2(6, 0)
+script = ExtResource("2_febnq")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(14, -4)
