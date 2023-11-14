@@ -1,19 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcsfwrmrv7s7l"]
+[gd_scene load_steps=4 format=3 uid="uid://bcsfwrmrv7s7l"]
 
 [ext_resource type="Script" path="res://karakter.gd" id="1_22so3"]
 [ext_resource type="Texture2D" uid="uid://csc0cklhlgtgu" path="res://pixil-frame-0_8 (3).png" id="2_jsgtp"]
-[ext_resource type="Texture2D" uid="uid://ders1jubvx2h0" path="res://pixil-frame-0_9.png" id="2_rw4qu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wqo2g"]
 size = Vector2(42.5, 78.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_22so3")
-
-[node name="Pixil-frame-09" type="Sprite2D" parent="."]
-position = Vector2(42, -3)
-scale = Vector2(3, 3)
-texture = ExtResource("2_rw4qu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
